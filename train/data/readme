@@ -1,1 +1,3 @@
 
+源文件的train里的data目录：C:\code\project\frc\neuralcoref-master\neuralcoref\train\data\numpy
+以及：C:\code\project\frc\neuralcoref-master\neuralcoref\train\data\train(主要放置了训练数据）
