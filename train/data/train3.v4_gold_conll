@@ -1,0 +1,26 @@
+#begin document (bc/cctv/00/cctv_0005); part 000
+bc/cctv/00/cctv_0005   0    0       Yes    UH   (TOP(S(INTJ*)              -    -   -    Wang_shilin  *    (ARGM-DIS*)          *         -
+bc/cctv/00/cctv_0005   0    1         ,     ,              *               -    -   -    Wang_shilin  *             *           *         -
+bc/cctv/00/cctv_0005   0    2         I   PRP           (NP*)              -    -   -    Wang_shilin  *        (ARG0*)          *       (12)
+bc/cctv/00/cctv_0005   0    3   noticed   VBD           (VP*           notice  01   1    Wang_shilin  *           (V*)          *         -
+bc/cctv/00/cctv_0005   0    4      that    IN         (SBAR*               -    -   -    Wang_shilin  *        (ARG1*           *         -
+bc/cctv/00/cctv_0005   0    5      many    JJ      (S(NP(NP*               -    -   -    Wang_shilin  *             *      (ARG0*         -
+bc/cctv/00/cctv_0005   0    6   friends   NNS              *)              -    -   -    Wang_shilin  *             *           *         -
+bc/cctv/00/cctv_0005   0    7         ,     ,              *               -    -   -    Wang_shilin  *             *           *         -
+bc/cctv/00/cctv_0005   0    8    around    IN           (PP*               -    -   -    Wang_shilin  *             *           *         -
+bc/cctv/00/cctv_0005   0    9        me   PRP           (NP*)))            -    -   -    Wang_shilin  *             *           *)      (12)
+bc/cctv/00/cctv_0005   0   10  received   VBD           (VP*          receive  01   1    Wang_shilin  *             *         (V*)        -
+bc/cctv/00/cctv_0005   0   11        it   PRP           (NP*)))))          -    -   -    Wang_shilin  *             *)     (ARG1*)     (119)
+bc/cctv/00/cctv_0005   0   12         .     .              *))             -    -   -    Wang_shilin  *             *           *         -
+
+bc/cctv/00/cctv_0005   0   0        It   PRP   (TOP(S(NP*)              -    -   -    Wang_shilin  *         *           *        -
+bc/cctv/00/cctv_0005   0   1     seems   VBZ         (VP*             seem  01   1    Wang_shilin  *       (V*)          *        -
+bc/cctv/00/cctv_0005   0   2      that    IN       (SBAR*               -    -   -    Wang_shilin  *    (ARG1*           *        -
+bc/cctv/00/cctv_0005   0   3    almost    RB       (S(NP*               -    -   -    Wang_shilin  *         *      (ARG0*        -
+bc/cctv/00/cctv_0005   0   4  everyone    NN            *)              -    -   -    Wang_shilin  *         *           *)       -
+bc/cctv/00/cctv_0005   0   5  received   VBD         (VP*          receive  01   1    Wang_shilin  *         *         (V*)       -
+bc/cctv/00/cctv_0005   0   6      this    DT         (NP*               -    -   -    Wang_shilin  *         *      (ARG1*     (119
+bc/cctv/00/cctv_0005   0   7       SMS    NN            *)))))          -    -   -    Wang_shilin  *         *)          *)     119)
+bc/cctv/00/cctv_0005   0   8         .     .            *))             -    -   -    Wang_shilin  *         *           *        -
+
+#end document
