@@ -1,0 +1,104 @@
+#begin document (bc/cctv/00/cctv_0005); part 000
+bc/cctv/00/cctv_0005 000 0 Yes -
+bc/cctv/00/cctv_0005 000 1 , -
+bc/cctv/00/cctv_0005 000 2 I -
+bc/cctv/00/cctv_0005 000 3 noticed -
+bc/cctv/00/cctv_0005 000 4 that -
+bc/cctv/00/cctv_0005 000 5 many (0|(2
+bc/cctv/00/cctv_0005 000 6 friends 0)
+bc/cctv/00/cctv_0005 000 7 , -
+bc/cctv/00/cctv_0005 000 8 around -
+bc/cctv/00/cctv_0005 000 9 me (1)
+bc/cctv/00/cctv_0005 000 10 received -
+bc/cctv/00/cctv_0005 000 11 it 2)|(3)
+bc/cctv/00/cctv_0005 000 12 . -
+
+bc/cctv/00/cctv_0005 000 0 It (4)
+bc/cctv/00/cctv_0005 000 1 seems -
+bc/cctv/00/cctv_0005 000 2 that -
+bc/cctv/00/cctv_0005 000 3 almost (5|(6
+bc/cctv/00/cctv_0005 000 4 everyone 5)
+bc/cctv/00/cctv_0005 000 5 received -
+bc/cctv/00/cctv_0005 000 6 this (7
+bc/cctv/00/cctv_0005 000 7 SMS 6)|7)
+bc/cctv/00/cctv_0005 000 8 . -
+
+#end document
+#begin document (bc/cctv/00/cctv_0005); part 000
+bc/cctv/00/cctv_0005 000 0 Yes -
+bc/cctv/00/cctv_0005 000 1 , -
+bc/cctv/00/cctv_0005 000 2 I -
+bc/cctv/00/cctv_0005 000 3 noticed -
+bc/cctv/00/cctv_0005 000 4 that -
+bc/cctv/00/cctv_0005 000 5 many (0|(2
+bc/cctv/00/cctv_0005 000 6 friends 0)
+bc/cctv/00/cctv_0005 000 7 , -
+bc/cctv/00/cctv_0005 000 8 around -
+bc/cctv/00/cctv_0005 000 9 me (1)
+bc/cctv/00/cctv_0005 000 10 received -
+bc/cctv/00/cctv_0005 000 11 it 2)|(3)
+bc/cctv/00/cctv_0005 000 12 . -
+
+bc/cctv/00/cctv_0005 000 0 It (4)
+bc/cctv/00/cctv_0005 000 1 seems -
+bc/cctv/00/cctv_0005 000 2 that -
+bc/cctv/00/cctv_0005 000 3 almost (5|(6
+bc/cctv/00/cctv_0005 000 4 everyone 5)
+bc/cctv/00/cctv_0005 000 5 received -
+bc/cctv/00/cctv_0005 000 6 this (7
+bc/cctv/00/cctv_0005 000 7 SMS 6)|7)
+bc/cctv/00/cctv_0005 000 8 . -
+
+#end document
+#begin document (bc/cctv/00/cctv_0005); part 000
+bc/cctv/00/cctv_0005 000 0 Yes -
+bc/cctv/00/cctv_0005 000 1 , -
+bc/cctv/00/cctv_0005 000 2 I -
+bc/cctv/00/cctv_0005 000 3 noticed -
+bc/cctv/00/cctv_0005 000 4 that -
+bc/cctv/00/cctv_0005 000 5 many (0|(2
+bc/cctv/00/cctv_0005 000 6 friends 0)
+bc/cctv/00/cctv_0005 000 7 , -
+bc/cctv/00/cctv_0005 000 8 around -
+bc/cctv/00/cctv_0005 000 9 me (1)
+bc/cctv/00/cctv_0005 000 10 received -
+bc/cctv/00/cctv_0005 000 11 it 2)|(3)
+bc/cctv/00/cctv_0005 000 12 . -
+
+bc/cctv/00/cctv_0005 000 0 It (4)
+bc/cctv/00/cctv_0005 000 1 seems -
+bc/cctv/00/cctv_0005 000 2 that -
+bc/cctv/00/cctv_0005 000 3 almost (5|(6
+bc/cctv/00/cctv_0005 000 4 everyone 5)
+bc/cctv/00/cctv_0005 000 5 received -
+bc/cctv/00/cctv_0005 000 6 this (7
+bc/cctv/00/cctv_0005 000 7 SMS 6)|7)
+bc/cctv/00/cctv_0005 000 8 . -
+
+#end document
+#begin document (bc/cctv/00/cctv_0005); part 000
+bc/cctv/00/cctv_0005 000 0 Yes -
+bc/cctv/00/cctv_0005 000 1 , -
+bc/cctv/00/cctv_0005 000 2 I -
+bc/cctv/00/cctv_0005 000 3 noticed -
+bc/cctv/00/cctv_0005 000 4 that -
+bc/cctv/00/cctv_0005 000 5 many (0|(2
+bc/cctv/00/cctv_0005 000 6 friends 0)
+bc/cctv/00/cctv_0005 000 7 , -
+bc/cctv/00/cctv_0005 000 8 around -
+bc/cctv/00/cctv_0005 000 9 me (1)
+bc/cctv/00/cctv_0005 000 10 received -
+bc/cctv/00/cctv_0005 000 11 it 2)|(3)
+bc/cctv/00/cctv_0005 000 12 . -
+
+bc/cctv/00/cctv_0005 000 0 It (4)
+bc/cctv/00/cctv_0005 000 1 seems -
+bc/cctv/00/cctv_0005 000 2 that -
+bc/cctv/00/cctv_0005 000 3 almost (5|(6
+bc/cctv/00/cctv_0005 000 4 everyone 5)
+bc/cctv/00/cctv_0005 000 5 received -
+bc/cctv/00/cctv_0005 000 6 this (7
+bc/cctv/00/cctv_0005 000 7 SMS 6)|7)
+bc/cctv/00/cctv_0005 000 8 . -
+
+#end document
