@@ -298,9 +298,11 @@ class ConllDoc(Document):
         提取跨度下的指代
         '''
         mentions_spans = extract_mentions_spans(doc)
+        ##按照mention的end     start位置排序
         processed_spans = sorted((m for m in mentions_spans), key=lambda m: (m.root.i, m.start))
         n_mentions = len(self.mentions)
         for mention_index, span in enumerate(processed_spans):
+##将可能的mention创建对象，放到self.mention
             self.mentions.append(Mention(span, mention_index + n_mentions,
                                              utterance_index, n_sents, speaker))
 
@@ -327,17 +329,20 @@ class ConllDoc(Document):
             for coref in corefs:
                 #            print("coref['label']", coref['label'])
                 #            print("coref text",parsed[coref['start']:coref['end']])
+                ##创建mention对象
                 mention = Mention(parsed[coref['start']:coref['end']], len(self.mentions), len(self.utterances),
                                   self.n_sents, speaker=self.speakers[speaker_id], gold_label=coref['label'])
                 self.mentions.append(mention)
                 #            print("mention: ", mention, "label", mention.gold_label)
                 ####################下面两行注释掉了,代码缺失，需要_extract_mentions
         else:
+            ###提取了mention，并初始化了每个mention的属性，将每个mention放入到self.mention的列表中
             self._extract_mentions(parsed, len(self.utterances), self.n_sents, self.speakers[speaker_id])
             #self.mentions=[['i'],['friends'],['me'],['it']]
             # Assign a gold label to mentions which have one
             if debug:
                 print("Check corefs", corefs)
+                ##遍历，找出mention中label是对的
             for i, coref in enumerate(corefs):
                 for m in self.mentions:
                     if m.utterance_index != len(self.utterances):
@@ -347,6 +352,7 @@ class ConllDoc(Document):
                         m.gold_label = coref['label']
                         identified_gold[i] = True
                         # if debug: print("Gold mention found:", m, coref['label'])
+            ##将corefs中identified_gold为True的确切信息放入到self.missed_gold
             for found, coref in zip(identified_gold, corefs):
                 if not found:
                     self.missed_gold.append([self.name, self.part, str(len(self.utterances)), parsed.text, parsed[coref['start']:coref['end']+1].text])
@@ -624,7 +630,8 @@ class ConllCorpus(object):
         nlp = spacy.load(model)
         print("🌋 Parsing utterances and filling docs")
         doc_iter = (s for s in self.utts_text)
-        ##使用spacy将conll文件中的数据提取，分别对应spacy_tokens, conll_tokens, corefs, speaker, doc_id
+        ##对文本里的每句话，使用spacy将conll文件中的数据提取，分别对应spacy_tokens, conll_tokens, corefs, speaker, doc_id
+        ##并使用add_conll_utterance提取其中的mention，初始化Mention对象
         for utt_tuple in tqdm(zip(nlp.pipe(doc_iter),
                                            self.utts_tokens, self.utts_corefs,
                                            self.utts_speakers, self.utts_doc_idx)):

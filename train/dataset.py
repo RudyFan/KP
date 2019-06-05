@@ -44,6 +44,7 @@ class NCDataset(Dataset):
                 continue
             numpy_files_found = True
             print(file_name, end=', ')
+            ##将特征放到一起
             datas[file_name.split(u'.')[0]] = np.load(data_path + file_name)
         if not numpy_files_found:
             raise ValueError("Can't find numpy files in {}".format(data_path))
@@ -227,9 +228,9 @@ class NCBatchSampler(Sampler):
             batchsize: Number of pairs of each batch will be capped at this
         """
         self.shuffle = shuffle
-        num_mentions = len(mentions_pairs_length)
-        mentions_lengths = np.concatenate([mentions_pairs_length, np.arange(0, num_mentions, 1, dtype=int)[:, np.newaxis]], axis=1)
-        sorted_lengths = mentions_lengths[mentions_lengths[:, 0].argsort()]
+        num_mentions = len(mentions_pairs_length)##mention_pairs_length=每一份文本中的mention个数*文本数量
+        mentions_lengths = np.concatenate([mentions_pairs_length, np.arange(0, num_mentions, 1, dtype=int)[:, np.newaxis]], axis=1)##给每个文档中的mention编号，形成【mention，序号】数组
+        sorted_lengths = mentions_lengths[mentions_lengths[:, 0].argsort()]##按照每个mention在文档中出现的顺序排序
         print("Preparing batches 📚")
 
         self.batches = []
@@ -238,6 +239,7 @@ class NCBatchSampler(Sampler):
         batch = []
         n_pairs = []
         num = 0
+        ##
         for length, mention_idx in sorted_lengths:
             if num > batchsize or (num == len(batch) and length != 0): # We keep the no_pairs batches pure
                 if debug: print("Added batch number", len(self.batches), 

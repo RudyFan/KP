@@ -105,6 +105,7 @@ def run_model(args):
 
     # Load datasets and embeddings
     embed_path = args.weights if args.weights is not None else args.train
+    ##加载嵌入层，和词汇
     tensor_embeddings, voc = load_embeddings_from_file(embed_path + "tuned_word")
     dataset = NCDataset(args.train, args)
     eval_dataset = NCDataset(args.eval, args)
@@ -177,8 +178,8 @@ def run_model(args):
                     print("🏔 Batch", batch_i, "m_idx:", "|".join(str(i) for i in m_idx),"mentions:","|".join(dataset.docs[d]['mentions'][i] for u, i, d in l))
                     print("Batch n_pairs:","|".join(str(p) for p in n_pairs_l))
                 inputs, targets = batch
-                inputs = tuple(Variable(inp, requires_grad=False) for inp in inputs)
-                targets = tuple(Variable(tar, requires_grad=False) for tar in targets)
+                inputs = tuple(Variable(inp, requires_grad=False) for inp in inputs)##8*250,8对应的是提取的特征，spans, words, single_features, ant_spans, ant_words, ana_spans, ana_words, pair_features
+                targets = tuple(Variable(tar, requires_grad=False) for tar in targets)##input是5*28*8，总共是8个mention，按pair结合在一起是（7+1）*7/2=28,28对pair,8维里的是
                 if args.cuda:
                     inputs = tuple(i.cuda() for i in inputs)
                     targets = tuple(t.cuda() for t in targets)
